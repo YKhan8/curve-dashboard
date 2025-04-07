@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
-import LoginPage from './pages/LoginPage';
-import HomePage from './pages/HomePage';
-import DashboardPage from './pages/DashboardPage';
-import UsersPage from './pages/EmployeesPage';
-import AnnouncementsPage from './pages/AnnouncementsPage';
+import LoginPage from './pages/auth/LoginPage';
+import DashboardPage from './pages/dashboard/DashboardPage';
+import UsersPage from './pages/users/UsersPage';
+import AnnouncementsPage from './pages/announcements/AnnouncementsPage';
+import OfficeTrackerPage from './pages/office-tracker/OfficeTrackerPage';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
@@ -13,38 +13,11 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <HomePage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <DashboardPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/users"
-            element={
-              <ProtectedRoute>
-                <UsersPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/announcements"
-            element={
-              <ProtectedRoute>
-                <AnnouncementsPage />
-              </ProtectedRoute>
-            }
-          />
+          <Route path="/" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+          <Route path="/users" element={<ProtectedRoute><UsersPage /></ProtectedRoute>} />
+          <Route path="/announcements" element={<ProtectedRoute><AnnouncementsPage /></ProtectedRoute>} />
+          <Route path="/office-tracker" element={<ProtectedRoute><OfficeTrackerPage /></ProtectedRoute>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </AuthProvider>
     </Router>

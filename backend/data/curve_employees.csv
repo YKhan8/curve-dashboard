@@ -1,0 +1,51 @@
+name,email,password,role,status,location
+Kathryn Burrows,kathryn.burrows@curve.com,password22,Software Developer,active,Bristol
+Darren Nixon,darren.nixon@curve.com,password67,Software Developer,active,Liverpool
+Rosemary Knight,rosemary.knight@curve.com,password36,Software Developer,active,Bristol
+Keith Carter-Jones,keith.carterjones@curve.com,password91,Software Developer,active,London
+Dr Oliver Smith,dr.smith@curve.com,password23,Software Developer,active,Bristol
+Gemma Smith,gemma.smith@curve.com,password75,Software Developer,active,London
+Georgia Hobbs,georgia.hobbs@curve.com,password29,Software Developer,active,Bristol
+Anthony Smith,Anthony.smith@curve.com,password57,Software Developer,active,Manchester
+Judith Cole,judith.cole@curve.com,password99,Software Developer,offline,London
+Connor Foster-Wilson,connor.fosterwilson@curve.com,password66,Software Developer,active,Birmingham
+Dr Hayley McDonald,dr.mcdonald@curve.com,password58,Software Developer,offline,Liverpool
+Hugh Phillips,hugh.phillips@curve.com,password42,Software Developer,active,London
+Mr Jonathan Cross,mr.cross@curve.com,password36,Software Developer,active,Manchester
+Sian Smith,sian.smith@curve.com,password18,Software Developer,active,Leeds
+Molly Scott,molly.scott@curve.com,password41,Software Developer,active,Leeds
+Norman Holt,norman.holt@curve.com,password21,Software Developer,active,London
+Georgia Whittaker,georgia.whittaker@curve.com,password21,Software Developer,active,Birmingham
+Marcus Stephenson,marcus.stephenson@curve.com,password63,Software Developer,active,Manchester
+Julia Green,julia.green@curve.com,password43,Software Developer,active,Leeds
+Ms Jill Clements,ms.clements@curve.com,password54,Software Developer,offline,London
+Leigh Mills,leigh.mills@curve.com,password59,Cloud Engineer,offline,Manchester
+Kevin Jones,kevin.jones@curve.com,password46,Cloud Engineer,active,Liverpool
+Roy Tucker,roy.tucker@curve.com,password75,Cloud Engineer,active,London
+Andrew Campbell,andrew.campbell@curve.com,password45,Cloud Engineer,active,Birmingham
+Neil Cartwright,neil.cartwright@curve.com,password70,Cloud Engineer,active,Bristol
+Julian Baldwin,julian.baldwin@curve.com,password25,Cloud Engineer,active,Leeds
+Miss Emily Wallace,miss.wallace@curve.com,password78,Team Lead,active,Manchester
+Lee Mills,lee.mills@curve.com,password36,Team Lead,active,Manchester
+Robin O'Neill,robin.o'neill@curve.com,password61,Team Lead,active,Leeds
+Dennis Whittaker,dennis.whittaker@curve.com,password37,Team Lead,active,Manchester
+Henry Pugh,henry.pugh@curve.com,password93,Team Lead,active,Birmingham
+Marian Rogers,marian.rogers@curve.com,password61,Project Manager,active,Bristol
+Catherine Cox,catherine.cox@curve.com,password77,Project Manager,active,London
+Billy Rice,billy.rice@curve.com,password27,Project Manager,active,Bristol
+Mr Terry Steele,mr.steele@curve.com,password52,Project Manager,active,Bristol
+Miss Chelsea Kent,miss.kent@curve.com,password93,DevOps Engineer,active,Liverpool
+Samantha Davey,samantha.davey@curve.com,password17,DevOps Engineer,active,Liverpool
+Samuel Cooper,samuel.cooper@curve.com,password15,DevOps Engineer,active,Bristol
+Cheryl Bibi,cheryl.bibi@curve.com,password59,DevOps Engineer,active,Bristol
+Mr Bryan Blake,mr.blake@curve.com,password44,QA Analyst,active,Leeds
+Deborah Warner,deborah.warner@curve.com,password94,QA Analyst,active,Leeds
+Kate Hammond,kate.hammond@curve.com,password47,QA Analyst,active,Manchester
+Ann Smith,ann.smith@curve.com,password81,Data Analyst,active,Leeds
+Gerard Alexander,gerard.alexander@curve.com,password89,Data Analyst,offline,Bristol
+Duncan Hartley,duncan.hartley@curve.com,password43,Data Analyst,active,Liverpool
+Dr Maria Edwards,maria.edwards@curve.com,password90,Product Owner,active,Bristol
+Dr Allan Harrison,allan.harrison@curve.com,password43,Product Owner,active,Liverpool
+Stanley North,stanley.north@curve.com,password93,Product Owner,active,Birmingham
+Christian McDonald,christian.mcdonald@curve.com,password58,Senior Manager,active,London
+Angela Taylor,angela.taylor@curve.com,password87,Senior Manager,active,Bristol

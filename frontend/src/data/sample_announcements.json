@@ -1,0 +1,60 @@
+{
+  "announcements": [
+    {
+      "emoji": "🛠️",
+      "title": "Scheduled Downtime This Weekend",
+      "content": "We'll be doing some routine maintenance from 1am to 5am this Saturday. Expect short service interruptions.",
+      "category": "Maintenance",
+      "posted_by": "System Admin",
+      "created_at": "2024-03-30"
+    },
+    {
+      "emoji": "🎉",
+      "title": "Welcome Our New Team Member!",
+      "content": "Join us in welcoming Sarah to the marketing team. She'll be working on social media strategy.",
+      "category": "Welcome",
+      "posted_by": "HR Department",
+      "created_at": "2024-03-28"
+    },
+    {
+      "emoji": "🚀",
+      "title": "Internal Package Repo Deployed",
+      "content": "We've launched our internal npm package repo. Reach out to Duncan if you have issues publishing.",
+      "posted_by": "Angela Taylor",
+      "category": "Product Update",
+      "created_at": "2024-03-25"
+    },
+    {
+      "emoji": "🧠",
+      "title": "New Documentation Process",
+      "content": "We're implementing a new process for technical documentation. Check out the updated guidelines in Notion.",
+      "category": "Process",
+      "posted_by": "Tech Lead",
+      "created_at": "2024-03-20"
+    },
+    {
+      "emoji": "🏢",
+      "title": "Office Renovation Update",
+      "content": "The 3rd floor renovation will begin next week. All teams will temporarily relocate to the 4th floor.",
+      "category": "Office",
+      "posted_by": "Office Manager",
+      "created_at": "2024-03-15"
+    },
+    {
+      "emoji": "🔐",
+      "title": "Security Policy Update",
+      "content": "New password requirements are now in effect. Please update your credentials by the end of this week.",
+      "category": "Security",
+      "posted_by": "IT Security",
+      "created_at": "2024-03-10"
+    },
+    {
+      "emoji": "📢",
+      "title": "Quarterly All-Hands Meeting",
+      "content": "Join us for our Q1 all-hands meeting this Friday at 2 PM in the main conference room.",
+      "category": "General",
+      "posted_by": "Communications Team",
+      "created_at": "2024-03-05"
+    }
+  ]
+} 

@@ -1,19 +1,15 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 const LoginPage = () => {
-  // State for form inputs and error handling
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  
-  // Hooks for navigation
   const navigate = useNavigate();
   const { login } = useAuth();
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -31,39 +27,41 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center p-4">
-      <div className="bg-blue-800/50 rounded-lg p-8 shadow-xl w-full max-w-md backdrop-blur-sm">
-        <h1 className="text-4xl font-bold text-white text-center mb-8">CURVE</h1>
+    <div className="min-h-screen bg-kpmg-blue-primary flex items-center justify-center p-4">
+      <div className="bg-white/95 rounded-lg p-8 shadow-xl w-full max-w-md backdrop-blur-sm">
+        <h1 className="text-6xl font-black tracking-widest text-kpmg-blue-primary text-center mb-8 uppercase">
+          Curve
+        </h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label className="block text-white mb-2">Email Address</label>
+            <label className="block text-kpmg-text mb-2 text-lg">Email Address</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 rounded bg-blue-900/50 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded border-2 border-kpmg-blue-light text-kpmg-text placeholder-kpmg-text/50 focus:outline-none focus:ring-2 focus:ring-kpmg-blue-primary focus:border-transparent"
               placeholder="Enter your email"
               required
             />
           </div>
           <div>
-            <label className="block text-white mb-2">Password</label>
+            <label className="block text-kpmg-text mb-2 text-lg">Password</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 rounded bg-blue-900/50 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-3 rounded border-2 border-kpmg-blue-light text-kpmg-text placeholder-kpmg-text/50 focus:outline-none focus:ring-2 focus:ring-kpmg-blue-primary focus:border-transparent"
               placeholder="Enter your password"
               required
             />
           </div>
           {error && (
-            <div className="text-red-300 text-sm text-center">{error}</div>
+            <div className="text-red-500 text-sm text-center">{error}</div>
           )}
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-white text-blue-900 py-3 px-4 rounded font-semibold hover:bg-blue-50 transition-colors disabled:opacity-50"
+            className="w-full bg-kpmg-blue-primary text-white py-3 px-4 rounded font-bold hover:bg-kpmg-blue-medium transition-colors disabled:opacity-50 text-lg"
           >
             {loading ? 'Signing in...' : 'Sign In'}
           </button>
@@ -73,4 +71,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage; 
+export default LoginPage;

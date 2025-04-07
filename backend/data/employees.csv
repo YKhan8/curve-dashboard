@@ -1,6 +1,0 @@
-id,name,email,password,role,status,online,location
-32632f2c-9576-48ed-93fa-221ff6cfbec7,Abdul Hanson,abdul.hanson@curve.com,Password123!,Staff,Active,false,London
-91765f44-392d-45ba-8e2d-24249b24b791,Alexandra Bell,alexandra.bell@curve.com,Password123!,Staff,Active,false,Manchester
-38a77022-c3cf-4aa7-ad79-aa780e53838d,Beverley Bailey,beverley.bailey@curve.com,Password123!,Staff,Active,false,Birmingham
-bbf81158-892c-4462-bda9-8b32e550245f,Brian Harvey,brian.harvey@curve.com,Password123!,Staff,Active,false,Leeds
-0c9fd8f3-f81b-47eb-8800-088be059b59f,Brian May,brian.may@curve.com,Password123!,Staff,Active,false,Glasgow
