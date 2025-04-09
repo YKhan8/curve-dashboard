@@ -57,10 +57,13 @@ const OfficeTrackerPage = () => {
       <main className="flex-1 p-8 overflow-auto bg-kpmg-bg">
         <div className="w-full max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">Schedule</h1>
+            <div className="flex flex-col">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">Schedule</h1>
+              <div className="h-1 w-12 bg-kpmg-blue-primary rounded"></div>
+            </div>
             <button
               onClick={() => setShowAddModal(true)}
-              className="bg-kpmg-blue-primary text-white px-6 py-3 rounded-lg hover:bg-kpmg-blue-medium transition-colors"
+              className="bg-kpmg-blue-primary text-white px-3 py-2 lg:px-6 lg:py-3 text-sm lg:text-base rounded-lg hover:bg-kpmg-blue-medium transition-colors"
             >
               Add Office Hours
             </button>
@@ -71,18 +74,18 @@ const OfficeTrackerPage = () => {
               <div className="flex justify-between items-center mb-6">
                 <button
                   onClick={handlePreviousWeek}
-                  className="text-kpmg-blue-primary hover:text-kpmg-blue-medium"
+                  className="text-xs text-kpmg-blue-primary hover:text-kpmg-blue-medium transition-colors px-2"
                 >
-                  ← Previous Week
+                  ← Prev
                 </button>
-                <h2 className="text-xl font-semibold">
+                <h2 className="text-lg font-semibold">
                   Week of {format(startOfWeek(selectedWeek, { weekStartsOn: 1 }), 'MMM d, yyyy')}
                 </h2>
                 <button
                   onClick={handleNextWeek}
-                  className="text-kpmg-blue-primary hover:text-kpmg-blue-medium"
+                  className="text-xs text-kpmg-blue-primary hover:text-kpmg-blue-medium transition-colors px-2"
                 >
-                  Next Week →
+                  Next →
                 </button>
               </div>
               {loading ? (

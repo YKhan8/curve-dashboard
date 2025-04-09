@@ -3,7 +3,15 @@ import { supabase } from '../../supabaseClient';
 import Sidebar from '../../components/Sidebar';
 import { format } from 'date-fns';
 import AddAnnouncementModal from './components/AddAnnouncementModal';
-import { ANNOUNCEMENT_TYPES } from '../../constants/announcements';
+
+const ANNOUNCEMENT_TYPES = {
+  General: { emoji: '📢', description: 'General announcements' },
+  Maintenance: { emoji: '🔧', description: 'System maintenance updates' },
+  'Product Update': { emoji: '🚀', description: 'Product updates and releases' },
+  Process: { emoji: '🧠', description: 'Process changes and updates' },
+  Office: { emoji: '🏢', description: 'Office-related announcements' },
+  Celebration: { emoji: '🎉', description: 'Celebrations and events' }
+};
 
 const AnnouncementsPage = () => {
   const [announcements, setAnnouncements] = useState([]);
@@ -59,15 +67,18 @@ const AnnouncementsPage = () => {
   };
 
   return (
-    <div className="flex h-screen bg-[#F2F2F2]">
+    <div className="flex h-screen bg-kpmg-bg">
       <Sidebar />
-      <div className="flex-1 p-8 overflow-auto">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex justify-between items-center mb-6">
-            <h1 className="text-3xl font-bold text-gray-900">Announcements</h1>
+      <main className="flex-1 p-8 overflow-auto">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="flex justify-between items-center mb-8">
+            <div className="flex flex-col">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">Announcements</h1>
+              <div className="h-1 w-12 bg-kpmg-blue-primary rounded"></div>
+            </div>
             <button
               onClick={() => setShowAddModal(true)}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              className="bg-kpmg-blue-primary text-white px-3 py-2 lg:px-6 lg:py-3 text-sm lg:text-base rounded-lg hover:bg-kpmg-blue-medium transition-colors"
             >
               New Announcement
             </button>
@@ -117,7 +128,7 @@ const AnnouncementsPage = () => {
             </div>
           )}
         </div>
-      </div>
+      </main>
 
       {showAddModal && (
         <AddAnnouncementModal

@@ -39,7 +39,7 @@ const LoginPage = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 rounded border-2 border-kpmg-blue-light text-kpmg-text placeholder-kpmg-text/50 focus:outline-none focus:ring-2 focus:ring-kpmg-blue-primary focus:border-transparent"
+              className="w-full px-4 py-3 rounded border-2 border-gray-200 text-kpmg-text placeholder-kpmg-text/50 focus:outline-none focus:ring-2 focus:ring-kpmg-blue-primary focus:border-kpmg-blue-primary transition-colors focus-visible:outline-none"
               placeholder="Enter your email"
               required
             />
@@ -50,7 +50,7 @@ const LoginPage = () => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 rounded border-2 border-kpmg-blue-light text-kpmg-text placeholder-kpmg-text/50 focus:outline-none focus:ring-2 focus:ring-kpmg-blue-primary focus:border-transparent"
+              className="w-full px-4 py-3 rounded border-2 border-gray-200 text-kpmg-text placeholder-kpmg-text/50 focus:outline-none focus:ring-2 focus:ring-kpmg-blue-primary focus:border-kpmg-blue-primary transition-colors focus-visible:outline-none"
               placeholder="Enter your password"
               required
             />

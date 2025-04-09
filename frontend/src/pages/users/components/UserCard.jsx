@@ -7,21 +7,14 @@ const UserCard = ({ user }) => (
       <p className="text-kpmg-text mb-2 truncate w-full">{user.email}</p>
       
       <div className="flex items-center gap-2 mb-3">
-        <span className="h-2 w-2 bg-kpmg-green rounded-full"></span>
-        <span className="text-kpmg-text">Online</span>
+        <span className={`h-2 w-2 rounded-full ${user.online ? 'bg-kpmg-green' : 'bg-gray-400'}`}></span>
+        <span className="text-kpmg-text">{user.online ? 'Online' : 'Offline'}</span>
       </div>
 
       <div className="w-full space-y-2">
         <div className="flex justify-center items-center gap-2">
           <span className="text-kpmg-text">Role:</span>
           <span className="font-semibold text-kpmg-blue-primary">{user.role}</span>
-        </div>
-
-        <div className="flex justify-center items-center gap-2">
-          <span className="text-kpmg-text">Status:</span>
-          <span className="bg-kpmg-green/10 text-kpmg-green px-3 py-0.5 rounded-full text-sm font-medium">
-            Active
-          </span>
         </div>
 
         <div className="flex justify-center items-center gap-2">
@@ -39,7 +32,8 @@ UserCard.propTypes = {
     email: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,
     status: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired
+    location: PropTypes.string.isRequired,
+    online: PropTypes.bool
   }).isRequired
 };
 

@@ -2,7 +2,15 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../../../supabaseClient';
 import { format } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
-import { ANNOUNCEMENT_TYPES } from '../../../constants/announcements';
+
+const ANNOUNCEMENT_TYPES = {
+  General: { emoji: '📢', description: 'General announcements' },
+  Maintenance: { emoji: '🔧', description: 'System maintenance updates' },
+  'Product Update': { emoji: '🚀', description: 'Product updates and releases' },
+  Process: { emoji: '🧠', description: 'Process changes and updates' },
+  Office: { emoji: '🏢', description: 'Office-related announcements' },
+  Celebration: { emoji: '🎉', description: 'Celebrations and events' }
+};
 
 const RecentAnnouncements = () => {
   const [announcements, setAnnouncements] = useState([]);
